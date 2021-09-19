@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="BasicAuth">
+    <meta name="author" content="siddub">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Desafio Final - Registrar</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="https://static.wixstatic.com/media/f0b66f_c5005a986c6c46338769548a210a0a1d~mv2.png/v1/crop/x_0,y_98,w_1280,h_260/fill/w_336,h_71,al_c,q_85,usm_0.66_1.00_0.01/f0b66f_c5005a986c6c46338769548a210a0a1d~mv2.webp" alt="Logo CappacitaDev" width="250rem" height="50rem" class="d-inline-block align-text-top">
+        REGISTRAR
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Melhores Filmes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Ação</a></li>
+              <li><a class="dropdown-item" href="#">Aventura</a></li>
+              <li><a class="dropdown-item" href="#">Clássicos</a></li>
+              <li><a class="dropdown-item" href="#">Comédia</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="#">Terror</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.cappacita.com.br/" target="_blank">Cappacita</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+      <form class="login-form" method="POST" action="/register"  >
+        <h2 class="form-heading">Crie sua conta</h2>
+        <input name="username" type="text" class="form-control" placeholder="Nome" autofocus="true"/>
+        <input name="email" type="text" class="form-control" placeholder="Email" autofocus="true"/>
+        <input name="password" type="password" class="form-control" placeholder="Senha" />
+        <input name="passwordConfirm" type="password" class="form-control" placeholder="Confirme a Senha" />
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+      </form>
+
+</div>
+<!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<style>
+input{
+  margin-bottom: 15px
+}
+h2{
+  text-align: center
+}
+.container{
+  width:50%
+}
+</style>
+
+</body>
+</html>
